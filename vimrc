@@ -28,3 +28,14 @@ set noexpandtab			" Use a real <Tab>
 
 set clipboard=unnamed	" Copy to system pasteboard
 set hidden				" buffer management
+
+" Scripts
+" Show highlighting groups for current word
+" kudos to http://vimcasts.org/e/25
+nmap <C-S-P> :call <SID>SynStack()<CR>
+function! <SID>SynStack()
+	if !exists("*synstack")
+		return
+	endif
+	echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
