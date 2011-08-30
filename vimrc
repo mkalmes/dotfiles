@@ -17,8 +17,8 @@ set statusline=%t\ %y\ %{&ff};\ [%c,%l]
 
 " Backup and Files
 set backup					" turn backups on
-set backupdir=~/.vim/tmp	" save backup files here
-set directory=~/.vim/tmp	" save swap files here
+set backupdir=/tmp	" save backup files here
+set directory=/tmp	" save swap files here
 
 
 " Tabstops (use hard tabs)
