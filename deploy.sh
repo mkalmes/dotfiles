@@ -14,5 +14,5 @@ done
 for dir in `find ${PWD}/. -maxdepth 1 -not -name '.*' -type d`; do
     dirname=`basename "$dir"`
     echo "ln -nfs `pwd`/$dirname -> ~/.$dirname"
-    ln -nfs `pwd`/$dirname -> ~/.$dirname
+    ln -nfs `pwd`/$dirname ~/.$dirname
 done
