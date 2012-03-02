@@ -1,0 +1,19 @@
+[user]
+	name = Marc Kalmes
+[core]
+	editor = /usr/local/bin/mate -w
+	excludesfile = /Users/mkalmes/.gitignore
+[merge]
+	tool = opendiff
+	stat = true
+[color]
+	ui = auto
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+[diff]
+	# renames = true
+	mnemonicprefix = true
+[mergetool]
+	keepBackup = true
