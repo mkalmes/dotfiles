@@ -115,3 +115,4 @@ alias apinfo='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/
 # openssl magic
 alias sha1='openssl dgst -sha1'
 alias sha256='openssl dgst -sha256'
+alias sha512='openssl dgst -sha512'
