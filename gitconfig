@@ -17,3 +17,7 @@
 	mnemonicprefix = true
 [mergetool]
 	keepBackup = true
+[push]
+	# Kudos to @tenderlove
+	# http://twitter.com/#!/tenderlove/statuses/180420276155187200
+	default = current
