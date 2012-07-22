@@ -71,6 +71,9 @@ setopt PROMPT_SUBST				# Turn on command substitution
 PS1='%n@%m:%2~ ${vcs_info_msg_0_}%B>%b '
 RPROMPT="[%t]"
 
+# Report CPU usage for commands running longer than 10 seconds
+# http://nuclearsquid.com/writings/reporttime-in-zsh/
+REPORTTIME=10
 
 ###############################################################################
 ## Colors
