@@ -2,7 +2,7 @@
 	name = Marc Kalmes
 [core]
 	editor = /usr/local/bin/mate -w
-	excludesfile = /Users/mkalmes/.gitignore
+	excludesfile = ~/.gitignore
 [merge]
 	tool = opendiff
 	stat = true
