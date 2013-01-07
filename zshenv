@@ -17,10 +17,17 @@ then
 fi
 
 
-# Set PATH for user's own bin
+# Set PATH for users own bin
 if [[ -d "${HOME}/.bin" ]]
 then
 	PATH="${HOME}/.bin:${PATH}"
+fi
+
+
+# Set PATH for users python scripts
+if [[ -d "/usr/local/share/python" ]]
+then
+	PATH=/usr/local/share/python:$PATH
 fi
 
 
