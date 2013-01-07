@@ -27,7 +27,7 @@ fi
 # Set PATH for users python scripts
 if [[ -d "/usr/local/share/python" ]]
 then
-	PATH=/usr/local/share/python:$PATH
+	PATH="/usr/local/share/python:${PATH}"
 fi
 
 
