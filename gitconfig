@@ -4,7 +4,7 @@
 	editor = /usr/local/bin/mate -w
 	excludesfile = ~/.gitignore
 [merge]
-	tool = opendiff
+	tool = Kaleidoscope
 	stat = true
 [color]
 	ui = auto
@@ -12,12 +12,22 @@
 	co = checkout
 	ci = commit
 	st = status
+	br = branch
 [diff]
 	# renames = true
 	mnemonicprefix = true
+	tool = Kaleidoscope
 [mergetool]
 	keepBackup = true
+	prompt = false
 [push]
 	# Kudos to @tenderlove
 	# http://twitter.com/#!/tenderlove/statuses/180420276155187200
 	default = current
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
