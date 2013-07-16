@@ -67,6 +67,10 @@ setopt INTERACTIVE_COMMENTS		# Allow comments in interactive shell
 
 setopt PROMPT_SUBST				# Turn on command substitution
 
+unsetopt nomatch				# Turn of error handling for a bad pattern
+								# to work around rvm.
+								# see https://github.com/robbyrussell/oh-my-zsh/issues/449
+
 # Based on cypher's PROMPT (https://github.com/cypher/dotfiles/blob/master/zshrc)
 PS1='%n@%m:%2~ ${vcs_info_msg_0_}%B>%b '
 RPROMPT="[%t]"
