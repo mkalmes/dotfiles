@@ -3,6 +3,8 @@
 [core]
 	editor = /usr/local/bin/mate -w
 	excludesfile = ~/.gitignore
+[credential]
+	helper = osxkeychain
 [merge]
 	tool = Kaleidoscope
 	stat = true
