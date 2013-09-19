@@ -15,6 +15,7 @@
 	ci = commit
 	st = status
 	br = branch
+  pr = fetch --prune
 [diff]
 	# renames = true
 	mnemonicprefix = true
