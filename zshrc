@@ -123,3 +123,6 @@ alias apinfo='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/
 alias sha1='openssl dgst -sha1'
 alias sha256='openssl dgst -sha256'
 alias sha512='openssl dgst -sha512'
+
+# 'clean' Xcode DerivedData folder
+alias cdd='rm -rf ${HOME}/Library/Developer/Xcode/DerivedData/*'
