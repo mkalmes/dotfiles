@@ -68,11 +68,15 @@ export LANG="en_US.UTF-8"
 ## UNIX TOOLS
 # Tabstops in /usr/bin/less
 export LESS="-x4 -R"
+
 ###############################################################################
 ## XCODE SETTINGS
 export DEVELOPER_DIR=`xcode-select --print-path`
 
 ###############################################################################
-## RVM SETTINGS
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+## RBENV SETTINGS
+if command -v rbenv >/dev/null 2>&1
+then
+	export PATH="$HOME/.rbenv/bin:$PATH"
+	eval "$(rbenv init -)"
+fi
