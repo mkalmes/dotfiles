@@ -126,3 +126,7 @@ alias sha512='openssl dgst -sha512'
 
 # 'clean' Xcode DerivedData folder
 alias cdd='setopt rmstarsilent;rm -rf ${HOME}/Library/Developer/Xcode/DerivedData/*;unsetopt rmstarsilent'
+
+# Open Xcode projects and workspaces
+alias -s xcodeproj="open -a Xcode"
+alias -s xcworkspace="open -a Xcode"
