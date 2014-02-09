@@ -90,7 +90,7 @@ export COLORTERM=yes
 
 ###############################################################################
 ## Editor
-if [[ -f $(which mate) ]]
+if command -v mate >/dev/null 2>&1
 then
     export VISUAL="mate -w"
     alias m='mate'
