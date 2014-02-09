@@ -125,4 +125,4 @@ alias sha256='openssl dgst -sha256'
 alias sha512='openssl dgst -sha512'
 
 # 'clean' Xcode DerivedData folder
-alias cdd='rm -rf ${HOME}/Library/Developer/Xcode/DerivedData/*'
+alias cdd='setopt rmstarsilent;rm -rf ${HOME}/Library/Developer/Xcode/DerivedData/*;unsetopt rmstarsilent'
