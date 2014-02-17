@@ -5,6 +5,8 @@
 	excludesfile = ~/.gitignore
 [credential]
 	helper = osxkeychain
+[branch]
+	autosetuprebase = always
 [merge]
 	tool = Kaleidoscope
 	stat = true
