@@ -1,0 +1,5 @@
+# Kudos: http://brettterpstra.com/2014/05/10/bash-and-dash/
+# Open Argument in Dash
+dash() {
+	open "dash://$*"
+}
