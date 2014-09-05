@@ -45,3 +45,7 @@ set wrap
 set textwidth=79
 set formatoptions=qrn1
 set colorcolumn=85
+
+" Show invisibles
+set list
+set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮
