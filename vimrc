@@ -75,3 +75,22 @@ set incsearch           " incremental search
 set number              " show linenumbers
 set laststatus=2        " always show status line
 set statusline=%t\ %y\ %{&ff};\ [%c,%l]
+
+
+" Backup and Files {{{
+set backup                          " turn backups on
+set undodir=~/.vim/tmp/undo//       " save undo files here
+set backupdir=~/.vim/tmp/backup//   " save backup files here
+set directory=~/.vim/tmp/swap//     " save swap files here
+
+" Make those folders automatically if they don't already exist.
+if !isdirectory(expand(&undodir))
+    call mkdir(expand(&undodir), "p")
+endif
+if !isdirectory(expand(&backupdir))
+    call mkdir(expand(&backupdir), "p")
+endif
+if !isdirectory(expand(&directory))
+    call mkdir(expand(&directory), "p")
+endif
+" }}}
