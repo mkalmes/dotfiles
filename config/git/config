@@ -1,7 +1,6 @@
 [user]
 	name = Marc Kalmes
 [core]
-	editor = /usr/local/bin/mate -w
 	excludesfile = ~/.gitignore
 [credential]
 	helper = osxkeychain
