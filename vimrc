@@ -64,3 +64,7 @@ nnoremap k gk
 
 " Make your live easier
 nnoremap ; :
+
+" Folding
+set foldlevelstart=2
+set foldmethod=marker
