@@ -90,15 +90,7 @@ export COLORTERM=yes
 
 ###############################################################################
 ## Editor
-if command -v mate >/dev/null 2>&1
-then
-    export VISUAL="mate -w"
-    alias m='mate'
-    alias m.='mate .'
-else
-    export VISUAL="vim -f"
-fi
-
+export VISUAL="vim -f"
 export EDITOR=$VISUAL
 export SVN_EDITOR=$VISUAL
 
