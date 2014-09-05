@@ -94,3 +94,9 @@ if !isdirectory(expand(&directory))
     call mkdir(expand(&directory), "p")
 endif
 " }}}
+
+" Tabstops
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
