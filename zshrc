@@ -38,38 +38,38 @@ zstyle ':completion:*' file-sort reverse access
 autoload -Uz vcs_info
 
 zstyle ':vcs_info:*' enable git
-zstyle ':vcs_info:*' actionformats		'[%b|%a]%u%c '
-zstyle ':vcs_info:*' formats			'[%b]%u%c '
-zstyle ':vcs_info:*' check-for-changes	true
-zstyle ':vcs_info:*' unstagedstr		'↯' # U+21AF
+zstyle ':vcs_info:*' actionformats      '[%b|%a]%u%c '
+zstyle ':vcs_info:*' formats            '[%b]%u%c '
+zstyle ':vcs_info:*' check-for-changes  true
+zstyle ':vcs_info:*' unstagedstr        '↯' # U+21AF
 
 precmd () {
-	 vcs_info
+     vcs_info
 }
 
 ###############################################################################
 ## Options
 
-setopt APPEND_HISTORY			# Append history instead of overwriting it
-setopt SHARE_HISTORY			# import and appended typed commands to the
-								# history file
-setopt HIST_IGNORE_ALL_DUPS		# Remove older command from history
+setopt APPEND_HISTORY           # Append history instead of overwriting it
+setopt SHARE_HISTORY            # import and appended typed commands to the
+                                # history file
+setopt HIST_IGNORE_ALL_DUPS     # Remove older command from history
 
 HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.history
 
-setopt AUTO_PUSHD				# make cd push the dir to a stack
-setopt PUSHD_IGNORE_DUPS		# Don't push the same dir twice
-DIRSTACKSIZE=10					# Max. size of the stack befor it gets
-								# truncated
-setopt INTERACTIVE_COMMENTS		# Allow comments in interactive shell
+setopt AUTO_PUSHD               # make cd push the dir to a stack
+setopt PUSHD_IGNORE_DUPS        # Don't push the same dir twice
+DIRSTACKSIZE=10                 # Max. size of the stack befor it gets
+                                # truncated
+setopt INTERACTIVE_COMMENTS     # Allow comments in interactive shell
 
-setopt PROMPT_SUBST				# Turn on command substitution
+setopt PROMPT_SUBST             # Turn on command substitution
 
-unsetopt nomatch				# Turn of error handling for a bad pattern
-								# to work around rvm.
-								# see https://github.com/robbyrussell/oh-my-zsh/issues/449
+unsetopt nomatch                # Turn of error handling for a bad pattern
+                                # to work around rvm.
+                                # see https://github.com/robbyrussell/oh-my-zsh/issues/449
 
 # Based on cypher's PROMPT (https://github.com/cypher/dotfiles/blob/master/zshrc)
 PS1='%n@%m:%2~ ${vcs_info_msg_0_}%B>%b '
