@@ -68,3 +68,10 @@ nnoremap ; :
 " Folding
 set foldlevelstart=2
 set foldmethod=marker
+
+" Appearance
+set hlsearch            " show search
+set incsearch           " incremental search
+set number              " show linenumbers
+set laststatus=2        " always show status line
+set statusline=%t\ %y\ %{&ff};\ [%c,%l]
