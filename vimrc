@@ -39,3 +39,9 @@ set backspace=indent,eol,start
 set laststatus=2
 set relativenumber
 set undofile
+
+" Handle long lines
+set wrap
+set textwidth=79
+set formatoptions=qrn1
+set colorcolumn=85
