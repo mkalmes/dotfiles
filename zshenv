@@ -18,9 +18,9 @@ fi
 
 
 # Set PATH for users own bin
-if [[ -d "${HOME}/.bin" ]]
+if [[ -d "${HOME}/bin" ]]
 then
-	PATH="${HOME}/.bin:${PATH}"
+	PATH="${HOME}/bin:${PATH}"
 fi
 
 
