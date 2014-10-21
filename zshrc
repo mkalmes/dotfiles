@@ -38,9 +38,10 @@ zstyle ':completion:*' file-sort reverse access
 autoload -Uz vcs_info
 
 zstyle ':vcs_info:*' enable git
-zstyle ':vcs_info:*' actionformats      '[%b|%a]%u%c '
-zstyle ':vcs_info:*' formats            '[%b]%u%c '
 zstyle ':vcs_info:*' check-for-changes  true
+zstyle ':vcs_info:*' get-revision       true
+zstyle ':vcs_info:*' formats            '%u%c[%b]@%7.7i'
+zstyle ':vcs_info:*' actionformats      '%u%c[%b|%a]@%7.7i'
 zstyle ':vcs_info:*' unstagedstr        '↯' # U+21AF
 
 precmd () {
@@ -74,8 +75,8 @@ unsetopt nomatch                # Turn of error handling for a bad pattern
                                 # see https://github.com/robbyrussell/oh-my-zsh/issues/449
 
 # Based on cypher's PROMPT (https://github.com/cypher/dotfiles/blob/master/zshrc)
-PS1='%n@%m:%2~ ${vcs_info_msg_0_}%B>%b '
-RPROMPT="[%t]"
+PS1='%n@%m:%2~ %B>%b '
+RPROMPT='${vcs_info_msg_0_}'
 
 # Report CPU usage for commands running longer than 10 seconds
 # http://nuclearsquid.com/writings/reporttime-in-zsh/
