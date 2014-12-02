@@ -7,3 +7,11 @@ command alias reveal_load_sim expr (void*)dlopen("/Users/mkalmes/Applications/Re
 command alias reveal_load_dev expr (void*)dlopen([(NSString*)[(NSBundle*)[NSBundle mainBundle] pathForResource:@"libReveal" ofType:@"dylib"] cStringUsingEncoding:0x4], 0x2);
 command alias reveal_start expr (void)[(NSNotificationCenter*)[NSNotificationCenter defaultCenter] postNotificationName:@"IBARevealRequestStart" object:nil];
 command alias reveal_stop expr (void)[(NSNotificationCenter*)[NSNotificationCenter defaultCenter] postNotificationName:@"IBARevealRequestStop" object:nil];
+
+# For substitution, use command regex
+# http://stackoverflow.com/a/16139539/1712728
+# command regex test 's/(.*)/po %1/'
+
+# Hexdump a string
+# The magic number is NSUTF8StringEncoding
+command regex hexstring 's/(.*)/po (NSString *)NSLog(@"Return: %@", [%1 dataUsingEncoding:4]);/'
