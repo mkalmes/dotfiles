@@ -15,3 +15,8 @@ command alias reveal_stop expr (void)[(NSNotificationCenter*)[NSNotificationCent
 # Hexdump a string
 # The magic number is NSUTF8StringEncoding
 command regex hexstring 's/(.*)/po (NSString *)NSLog(@"Return: %@", [%1 dataUsingEncoding:4]);/'
+
+# iOS 8: Where is your apps document folder?
+# 1. magic number is NSDocumentDirectory
+# 2. magic number is NSUserDomainMask
+command alias pdd expr (void*)NSLog(@"Documents Directory: %@", [(NSArray *)[[NSFileManager defaultManager] URLsForDirectory:9 inDomains:1] lastObject]);
