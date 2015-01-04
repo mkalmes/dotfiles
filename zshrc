@@ -57,6 +57,7 @@ setopt APPEND_HISTORY           # Append history instead of overwriting it
 setopt SHARE_HISTORY            # import and appended typed commands to the
                                 # history file
 setopt HIST_IGNORE_ALL_DUPS     # Remove older command from history
+setopt EXTENDED_HISTORY         # Save timestamps
 
 HISTSIZE=1000
 SAVEHIST=1000
