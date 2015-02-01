@@ -114,6 +114,7 @@ export SVN_EDITOR=$VISUAL
 
 ###############################################################################
 ## Alias
+alias ls='ls -G'
 alias ll='ls -lA'
 alias la='ls -la'
 
