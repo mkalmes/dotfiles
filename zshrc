@@ -59,8 +59,8 @@ setopt SHARE_HISTORY            # import and appended typed commands to the
 setopt HIST_IGNORE_ALL_DUPS     # Remove older command from history
 setopt EXTENDED_HISTORY         # Save timestamps
 
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=100000
+SAVEHIST=100000
 HISTFILE=~/.history
 
 setopt AUTO_PUSHD               # make cd push the dir to a stack
