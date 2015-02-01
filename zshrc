@@ -45,7 +45,7 @@ zstyle ':vcs_info:*' actionformats      '%u%c[%b|%a]@%7.7i'
 zstyle ':vcs_info:*' unstagedstr        '↯' # U+21AF
 
 precmd () {
-     vcs_info
+    vcs_info
 }
 
 autoload zmv
