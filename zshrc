@@ -101,15 +101,15 @@ export COLORTERM=yes
 ## Editor
 if command -v mate >/dev/null 2>&1
 then
-	export VISUAL="mate -w"
-	alias m='mate'
-	alias m.='mate .'
+    export VISUAL="mate -w"
+    export GIT_EDITOR="mate --name 'Git Commit Message' -w -l 1"
+    alias m='mate'
+    alias m.='mate .'
 else
-	export VISUAL="vim -f"
+    export VISUAL="vim -f"
 fi
 
 export EDITOR=$VISUAL
-export SVN_EDITOR=$VISUAL
 
 
 ###############################################################################
