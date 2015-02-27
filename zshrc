@@ -80,7 +80,7 @@ autoload -U colors
 colors
 setopt prompt_subst
 local statusprompt="%(?,%{$fg[green]%}>%{$reset_color%},%{$fg[red]%}>%{$reset_color%})"
-PS1='%n@%m
+PS1='%n@%m `tmuxlist`
 %B${statusprompt}%b '
 RPROMPT='%2~${vcs_info_msg_0_}'
 
