@@ -45,16 +45,6 @@ zstyle ':vcs_info:*' actionformats      ' %u%c%m[%b|%a]@%7.7i'
 zstyle ':vcs_info:*' unstagedstr        '↯' # U+21AF
 zstyle ':vcs_info:git*+set-message:*' hooks git-stash
 
-# Show count of stashed changes
-function +vi-git-stash() {
-    local -a stashes
-
-    if [[ -s ${hook_com[base]}/.git/refs/stash ]] ; then
-        stashes=$(git stash list 2>/dev/null | wc -l | tr -d "[[:space:]]")
-        hook_com[misc]+="(${stashes})"
-    fi
-}
-
 precmd () {
     vcs_info
 }
