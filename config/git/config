@@ -1,38 +1,38 @@
 [user]
-    name = Marc Kalmes
-    email = mkalmes@gmail.com
+	name = Marc Kalmes
+	email = mkalmes@gmail.com
 [core]
-    excludesfile = ~/.gitignore
+	excludesfile = ~/.gitignore
 [credential]
-    helper = osxkeychain
+	helper = osxkeychain
 [branch]
-    autosetuprebase = always
+	autosetuprebase = always
 [merge]
-    tool = Kaleidoscope
-    stat = true
+	tool = Kaleidoscope
+	stat = true
 [color]
-    ui = auto
+	ui = auto
 [alias]
-    co = checkout
-    ci = commit
-    st = status
-    br = branch
-    pr = fetch --prune
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	pr = fetch --prune
 [diff]
-    # renames = true
-    mnemonicprefix = true
-    tool = Kaleidoscope
+	# renames = true
+	mnemonicprefix = true
+	tool = Kaleidoscope
 [mergetool]
-    keepBackup = true
-    prompt = false
+	keepBackup = true
+	prompt = false
 [push]
-    # Kudos to @tenderlove
-    # http://twitter.com/#!/tenderlove/statuses/180420276155187200
-    default = current
+	# Kudos to @tenderlove
+	# http://twitter.com/#!/tenderlove/statuses/180420276155187200
+	default = current
 [difftool "Kaleidoscope"]
-    cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [difftool]
-    prompt = false
+	prompt = false
 [mergetool "Kaleidoscope"]
-    cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-    trustExitCode = true
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
