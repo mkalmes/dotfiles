@@ -47,6 +47,7 @@ zstyle ':vcs_info:git*+set-message:*' hooks git-stash
 
 precmd () {
     vcs_info
+    git-stash
 }
 
 autoload zmv
