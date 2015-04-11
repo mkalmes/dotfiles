@@ -1,3 +1,4 @@
 tmuxlist() {
     tmux list-sessions 2> /dev/null
+    return 0
 }
