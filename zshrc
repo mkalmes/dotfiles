@@ -113,6 +113,9 @@ fi
 
 export EDITOR=$VISUAL
 
+# Use emacs key bindings
+bindkey -e
+
 
 ###############################################################################
 ## Alias
