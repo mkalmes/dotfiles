@@ -14,7 +14,7 @@
 	ui = auto
 [alias]
 	co = checkout
-	ci = commit
+	ci = commit --verbose
 	st = status
 	br = branch
 	pr = fetch --prune
