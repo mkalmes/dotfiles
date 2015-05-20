@@ -1,0 +1,3 @@
+sus() {
+    sort | uniq -c | sort $@;
+}
