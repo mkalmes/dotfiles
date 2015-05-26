@@ -20,3 +20,7 @@ command regex hexstring 's/(.*)/po (NSString *)NSLog(@"Return: %@", [%1 dataUsin
 # 1. magic number is NSDocumentDirectory
 # 2. magic number is NSUserDomainMask
 command alias pdd expr (void*)NSLog(@"Documents Directory: %@", [(NSArray *)[[NSFileManager defaultManager] URLsForDirectory:9 inDomains:1] lastObject]);
+
+# Import modules to forget typecasts
+command alias uikit expr @import UIKit
+command alias foundation expr @import Foundation
