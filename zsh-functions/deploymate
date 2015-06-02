@@ -1,0 +1,7 @@
+deploymate () {
+    if [[ -d "$HOME/Applications/Deploymate.app" ]] ; then
+        $HOME/Applications/Deploymate.app/Contents/MacOS/Deploymate --cli $@;
+    else
+        echo "Deploymate not installed." ; return 1
+    fi
+}
