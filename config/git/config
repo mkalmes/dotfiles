@@ -1,6 +1,6 @@
 [user]
 	name = Marc Kalmes
-	email = mkalmes@gmail.com
+	email = mkalmes@mkalmes.net
 [core]
 	excludesfile = ~/.gitignore
 [credential]
