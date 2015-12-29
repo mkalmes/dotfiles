@@ -3,6 +3,8 @@
 	email = mkalmes@mkalmes.net
 [core]
 	excludesfile = ~/.config/git/ignore
+[commit]
+    template = ~/.config/git/message
 [credential]
 	helper = osxkeychain
 [branch]
