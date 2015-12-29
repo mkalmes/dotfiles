@@ -2,7 +2,7 @@
 	name = Marc Kalmes
 	email = mkalmes@mkalmes.net
 [core]
-	excludesfile = ~/.gitignore
+	excludesfile = ~/.config/git/ignore
 [credential]
 	helper = osxkeychain
 [branch]
