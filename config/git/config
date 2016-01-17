@@ -24,6 +24,8 @@
 	# renames = true
 	mnemonicprefix = true
 	tool = Kaleidoscope
+[diff "localizablestrings"]
+	textconv = "iconv -f utf-16 -t utf-8"
 [mergetool]
 	keepBackup = true
 	prompt = false
