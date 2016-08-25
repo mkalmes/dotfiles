@@ -15,11 +15,13 @@
 [color]
 	ui = auto
 [alias]
-	co = checkout
-	ci = commit --verbose
-	st = status
+	ap = add -p
 	br = branch
+	ci = commit --verbose
+	co = checkout
 	pr = fetch --prune
+	st = status
+
 [diff]
 	# renames = true
 	mnemonicprefix = true
