@@ -130,7 +130,7 @@ alias g='git'
 alias o='open'
 alias o.='open .'
 
-alias pod='bundle exec pod'
+alias p='bundle exec pod'
 
 # Show current airport status
 # Kudos to cypher (https://github.com/cypher/dotfiles/blob/master/zshrc)
