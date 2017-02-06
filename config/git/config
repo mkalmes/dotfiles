@@ -21,6 +21,7 @@
 	co = checkout
 	pr = fetch --prune
 	st = status
+	lol = log --graph --oneline --decorate
 
 [diff]
 	# renames = true
