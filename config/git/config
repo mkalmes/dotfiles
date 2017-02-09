@@ -22,6 +22,7 @@
 	pr = fetch --prune
 	st = status
 	lol = log --graph --oneline --decorate
+	rn  = "!f() { git log --oneline "$1".. | wc -l; }; f"
 
 [diff]
 	# renames = true
