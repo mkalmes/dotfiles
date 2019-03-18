@@ -132,6 +132,8 @@ alias o.='open .'
 
 alias p='bundle exec pod'
 
+alias tx='tmuxinator'
+
 # Show current airport status
 # Kudos to cypher (https://github.com/cypher/dotfiles/blob/master/zshrc)
 alias apinfo='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/airport -I'
