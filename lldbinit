@@ -24,3 +24,7 @@ command alias pdd expr (void*)NSLog(@"Documents Directory: %@", [(NSArray *)[[NS
 # Import modules to forget typecasts
 command alias uikit expr @import UIKit
 command alias foundation expr @import Foundation
+
+# Evaluate Obj-C code in Swift frames
+# https://developer.apple.com/wwdc18/412
+command alias poc expression -l objc -O --
