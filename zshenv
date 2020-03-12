@@ -56,7 +56,7 @@ export PATH
 
 ###############################################################################
 ## Directories
-IOSFRAMEWORKSPATH="${HOME}/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks"
+IOSFRAMEWORKSPATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks"
 if [[ -d ${IOSFRAMEWORKSPATH} ]]
 then
   ln -s "${IOSFRAMEWORKSPATH}" "${HOME}/iOS-Frameworks"
