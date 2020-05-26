@@ -49,3 +49,5 @@
 	trustExitCode = true
 [rebase]
 	autosquash = true
+[http]
+	cookiefile = /Users/marckalmes/.gitcookies
