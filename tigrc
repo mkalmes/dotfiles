@@ -1,3 +1,4 @@
+set reference-format = [head] tag <local> remote tracked replace branch
 set refresh-mode = periodic
 set refresh-interval = 1
 set main-view-date = relative-compact
