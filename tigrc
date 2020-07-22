@@ -1,2 +1,3 @@
 set refresh-mode = periodic
 set refresh-interval = 1
+set main-view-date = relative-compact
