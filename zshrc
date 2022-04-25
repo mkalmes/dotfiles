@@ -130,6 +130,9 @@ alias g='git'
 alias o='open'
 alias o.='open .'
 
+alias x='xed'
+alias x.='xed .'
+
 alias p='bundle exec pod'
 
 alias tx='tmuxinator'
