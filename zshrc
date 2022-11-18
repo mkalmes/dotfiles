@@ -154,3 +154,8 @@ alias cdd='setopt rmstarsilent;rm -rf ${HOME}/Library/Developer/Xcode/DerivedDat
 # Open Xcode projects and workspaces
 alias -s xcodeproj="open -a Xcode"
 alias -s xcworkspace="open -a Xcode"
+
+# mob
+alias ms='mob start'
+alias mn='mob next'
+alias md='mob done'
