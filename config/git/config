@@ -23,7 +23,7 @@
 	pr = fetch --prune
 	rn  = "!f() { git log --oneline "$1".. | wc -l; }; f"
 	st = status
-	rhh = reset --hard HEADß
+	rhh = reset --hard HEAD
 
 [diff]
 	# renames = true
