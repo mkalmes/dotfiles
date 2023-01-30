@@ -19,10 +19,11 @@
 	br = branch
 	ci = commit --verbose
 	co = checkout
-	pr = fetch --prune
-	st = status
 	lol = log --graph --oneline --decorate
+	pr = fetch --prune
 	rn  = "!f() { git log --oneline "$1".. | wc -l; }; f"
+	st = status
+	rhh = reset --hard HEADß
 
 [diff]
 	# renames = true
