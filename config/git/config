@@ -18,6 +18,7 @@
 	ap = add -p
 	br = branch
 	ci = commit --verbose
+	cm = commit --message
 	co = checkout
 	lol = log --graph --oneline --decorate
 	pr = fetch --prune
