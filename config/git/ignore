@@ -1,7 +1,8 @@
+# Created by https://www.toptal.com/developers/gitignore/api/macos,xcode
+# Edit at https://www.toptal.com/developers/gitignore?templates=macos,xcode
 
-# Created by https://www.gitignore.io/api/osx,xcode
-
-### OSX ###
+### macOS ###
+# General
 .DS_Store
 .AppleDouble
 .LSOverride
@@ -20,6 +21,7 @@ Icon
 .TemporaryItems
 .Trashes
 .VolumeIcon.icns
+.com.apple.timemachine.donotpresent
 
 # Directories potentially created on remote AFP share
 .AppleDB
@@ -28,28 +30,25 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+### macOS Patch ###
+# iCloud generated files
+*.icloud
 
 ### Xcode ###
-# Xcode
-#
-# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
-
-## Build generated
-build/
-DerivedData/
-
-## Various settings
-*.pbxuser
-!default.pbxuser
-*.mode1v3
-!default.mode1v3
-*.mode2v3
-!default.mode2v3
-*.perspectivev3
-!default.perspectivev3
+## User settings
 xcuserdata/
 
-## Other
-*.moved-aside
-*.xccheckout
+## Xcode 8 and earlier
 *.xcscmblueprint
+*.xccheckout
+
+### Xcode Patch ###
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata
+/*.gcno
+**/xcshareddata/WorkspaceSettings.xcsettings
+
+# End of https://www.toptal.com/developers/gitignore/api/macos,xcode
