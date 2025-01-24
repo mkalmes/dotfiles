@@ -1,0 +1,6 @@
+theme = CLRS
+
+font-family = SF Mono
+font-size = 16
+
+keybind = global:cmd+grave_accent=toggle_quick_terminal
