@@ -32,8 +32,8 @@ require("lazy").setup({
       lazy = false,
       priority = 1000,
       config = function()
-        -- load the colorscheme here
-        vim.cmd([[colorscheme tokyonight]])
+	-- load the colorscheme here
+	vim.cmd([[colorscheme tokyonight]])
       end,
     },
     { import = "config/plugins" },
