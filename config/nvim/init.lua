@@ -1,5 +1,8 @@
 print("Hello World")
 
+vim.opt.shiftwidth = 4
+vim.opt.clipboard = "unnamedplus"
+
 require("config.lazy")
 
 -- Kudos to TJ DeVries
