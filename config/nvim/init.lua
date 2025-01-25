@@ -1,5 +1,7 @@
 print("Hello World")
 
+require("config.lazy")
+
 -- Kudos to TJ DeVries
 -- https://www.youtube.com/watch?v=CuWfgiwI73Q
 vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>")
